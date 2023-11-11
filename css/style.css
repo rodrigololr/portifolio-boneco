@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html,body{
+    background-color: #09131d;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*começo*/
+
+header{
+    height: 110vh;
+    width: 100%;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.batata{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+    height: 120px;
+    width: 250px;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+nav.desktop{
+    width: 70%;
+}
+
+nav.desktop ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav.desktop ul li{
+    padding-top: 40px;
+    list-style-type: none;
+}
+
+
+i.fa-navicon{
+    position: fixed;
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav.celular{
+    position: fixed;
+    display: none;
+    width: 100%;
+}
+
+nav.celular ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(28 36 55 / 50%);
+}
+
+nav.celular ul li{
+    padding: 10px 0 10px 0;
+}
+
+ul li a{
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    transition: 1s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    color: rgb(233, 233, 79);
+}
+
+.text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+}
+
+.text h2{
+    color: white;
+    font-size: 50px;
+}
+
+
+.text span{
+    color: rgb(233, 233, 79);
+}
+
+.text p{
+    margin-top: 15px;
+    color: rgb(196, 192, 192);
+    font-size: 25px;
+    
+}
+
+.sociais{
+    margin-top: 10px;
+}
+
+svg{
+    cursor: pointer;
+    background-color: rgba(95, 94, 94, 0.4);
+    border-radius: 80px;
+    border: 3px solid black;
+    transition: 0.8s;
+}
+
+svg:hover{
+    border: 3px solid rgb(196, 192, 192);;
+}
+
+
+/*ABOUT8888888888888888*/
+
+section.about{
+    height: 100%;
+    width: 100%;
+}
+.cabecalho{
+    text-align: center;
+    position: relative;
+}
+
+.about .cabecalho h2{
+    color: rgb(28 36 55 / 50%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin: 0;
+    margin-top: -17px;
+    width: 100%;
+}
+
+.about .cabecalho h4{
+    color: rgb(233, 233, 79);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 40px;
+    padding-top: 5px;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.foto img{
+    margin-top: 60px;
+    height: 90%;
+    width: 100%;
+}
+
+.text-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    align-items: flex-start;
+}
+
+.text-sobre h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white
+}
+
+.text-sobre h4{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: rgb(233, 233, 79);
+}
+
+.text-sobre span{
+    font-size: 20px;
+}
+
+.text-sobre li span:first-child{
+    display: inline-block;
+    width: 102px;
+    margin-right: -5px
+}
+.text-sobre li span:last-child{
+    display: inline-block;
+    width: 280px;
+    margin-right: -5px
+}
+.text-sobre ul li{
+    padding-top: 25px;
+    list-style-type: none;
+}
+
+
+
+/****RESUMEEEEEEE******/
+
+.titulo{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+section.resume{
+    height: 100%;
+    width: 100%;
+}
+
+.resume .cabecalho h2{
+    color: rgb(28 36 55 / 50%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -30px;
+}
+
+.resume .cabecalho h4{
+    color: rgb(233, 233, 79);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative; 
+    margin-top: 220px;
+}
+
+.resumos{
+    display: flex;
+    
+}
+
+.resume .experience{
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.one:hover,.two:hover,.three:hover{
+    color:yellow ;
+}
+
+.resume .education{
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.education .edu{
+    text-align: left;
+    margin-top: 50px;
+    
+}
+
+.experience p,.educacao p{
+    padding: 0 40px 0 40px;
+    color:#ccc; 
+margin-top: 20px;
+}
+
+/*****CONTATOOOOO**/
+
+.contato{
+    height: 100vh;
+    width: 100%;
+}
+
+.contato .cabecalho h2{
+    color: rgb(28 36 55 / 50%);
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -30px;
+}
+
+.contato .cabecalho h4{
+    color: rgb(233, 233, 79);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative; 
+    margin-top: 220px;
+}
+
+.area-cont{
+    width: 100%;
+    display: flex;
+}
+
+.area-cont h2{
+    color: white;
+    font-size: 30px;
+}
+
+form{
+    color: #a9adb8;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+    padding-left: 90px;
+}
+
+input{
+    color: white;
+    width: 70%;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #101624;
+    border: 1px solid #4d4d56;;
+}
+
+textarea{
+    color: white;
+    text-align: start;
+    resize: none;
+    width: 70%;
+    margin-top: 40px;
+    padding: 12px 12px;
+    border-radius: 10px;
+    background-color: #101624;
+    border: 1px solid #4d4d56;
+}
+
+button{
+    background-color: rgb(233, 233, 79);
+    color: black;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cont-info{
+    width: 50%;
+    margin-top: 70px;
+    padding-right: 120px;
+}
+
+.cont-info p{
+    text-align: center;
+    color: rgb(214, 211, 211);
+    margin-top: 15px;
+}
+
+.contatos p{
+    padding-top: 30px;
+}
+.envelope,.telefone,.mapa{
+    display: flex;
+    align-items: center;
+}
+
+.mapa{
+    margin-bottom: 30px;
+}
+
+.contatos .fa{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    padding-top: 12px;
+}
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background-color: #d8d8d8;
+	cursor: pointer;
+    font-size: 0;
+}
+
+li.slick-active button{
+	background-color: rgb(233, 233, 79);
+	color: #688293;
+}
+
+.slick-focus:focus{
+	outline: none;
+}
+
+
+
+
+
+    @media screen and (max-width:1100px) {
+
+        .text-sobre h2{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: white
+        }
+        .text-sobre h4{
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: rgb(233, 233, 79);
+        }
+
+        @media  screen and (max-width:970px) {
+            .row{
+                display: block;
+            }
+
+            .batata{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav{
+                margin-bottom: 20px;
+                margin-right: 45px;
+            }
+            .cabecalho h2{
+                display: none;
+            }
+
+            nav.desktop{
+                display: none;
+            }
+
+            i.fa-navicon{
+                display: inline-block;
+            }
+            
+            .sobre{
+                display: block;
+            }
+            .foto{
+            margin:0 auto;
+            width: 80%;
+           }
+
+           .text-sobre{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+           }
+           .text-sobre span{
+            font-size: 20px;
+        }
+        .text-sobre li span:last-child {
+            display: inline-block;
+            width: 355px;
+            margin-right: -5px;
+        }
+        .area-cont{
+            flex-direction: column;
+        }
+
+        .area-cont form{
+            padding-top: 20px;
+            width: 100%;
+            margin: 0 auto;
+            align-items: center;
+            padding-left: 0;
+        }
+
+        .cont-info{
+            display: flex;
+            width: 100%;
+            padding-right: 0;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        }
+
+        
+    }
+
+    @media screen and (max-width: 420px) {
+        .text-sobre li span:last-child {
+            display: inline-block;
+            width: 217px;
+            margin-right: -5px;
+        }
+    }
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
